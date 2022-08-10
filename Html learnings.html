@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Assignment</title>
+    </head>
+    <body style="background-color:navy;"
+     text="white">
+        <h2 style="text-align:center;">VON NEUMANN ARCHITECTURE</h2>
+        <p>The <b>Von Neumann Architecture</b> is about the structure that a computer should follow.</p>
+        <p></p>Most computers today follow this framework.</p>
+       <p> This architecture is based on 1945 description by <b><i>John von Neumann</i></b></p>
+       A Von Neumann-based computer has the following characteristics:
+        <ul type ="square">
+           <li>Utilises a single processor</li>
+           <li>Utilises one memory for both instructions and data</li>
+           <li>Implements programs by executing one instruction at a time</li>
+           <li>Has a single bus for memory access</li>
+           <li>Its processor operates fetching and executing cycles seriously</li>
+        </ul>
+        The Von Neumann Architecture has the following components:
+        <ol type ="1">
+           <li>Central Processing Unit (CPU) </li>
+           <li>Immediate Access Store (IAS)</li>
+           <li>Input/Output(I/O)</li>
+        </ol>
+        <img src="von-Neumann.gif">
+        <br>
+        <p><u>Central Processing Unit</u></p>
+        <p>The CPU governs the computer and handles the data. It has four main parts as follows:</p>
+        <ul type ="disk">
+           <li><b>Arithmetic Logic Unit (ALU)</b></li>
+           <li><b>Control Unit</b></li>
+           <li><b>Registers</b></li>
+           <li><b>Clock</b></li>
+        </ul>
+        <p><u>Immediate Access Store</u></p>
+        This is commonly reffered to as the Random Access Memory (RAM) or Main Memory. It stores both instructions and data.
+        <p><u>Input/Output (I/O)</u></p>
+        It refers to the accessories for inputting and outputting data.
+        <p><b>Advantages:</b></p>
+        <ul type="circle">
+            <li>The control unit gets data and instructions in the same way from one memory</li>
+            <li>It simplifies design and development of the CU</li>
+            <li>Data from memory and from devices are accessed in the same way</li>
+            <li>Development of CU is cheaper and faster than Harvard</li>
+            <li>It is better for desktop computers, laptops, workstations and high performances computers</li>
+            <li>The program can be optimised in smaller size</li>
+            <li>The code is executed serially and takes more clock cycles</li>
+        </ul>
+        <p><b>Disadvantages:</b></p>
+        <ul type="circle">
+            <li>Bottlenedding is an issue because only one bit of information can be accessed at once</li>
+            <li>Confussion between data instructions can lead to a system crash</li>
+            <li>Instruction stored in the same memory as the data can be accidently rewritten by an error in a program</li>
+            <li>Serial instruction processing does not allow parallel execution of the program</li>
+            <li>Only handles one task at a time</li>
+        </ul>
+        <table border="2">
+            <caption>
+               <b>Differences between Von Neumann and Harvard Architecture</b>
+            </caption>
+            <th>Points of comparision</th>
+            <th>Von Neumann Architecture</th>
+            <th>Harvard Architecture</th>
+            <tr>
+                <td>Arrangement</td>
+                <td>There is no separate data and program memory
+                    <img src="Von-Neumann-Architecture.webp">
+                </td>
+                <td>The CPU is connected with both the data memory and program memory
+                    <img src="Harvard-Architecture.webp">
+                </td>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td>Data and instructions reside within a single memory unit</td>
+                <td>Data and instructions are provided 2 different memory units</td>
+            </tr>
+            <tr>
+                <td>Based on</td>
+                <td>Stored program computer concept</td>
+                <td>Harvard Mark I relay based model</td>
+            </tr>
+            <tr>
+                <td>Memory system</td>
+                <td>Single</td>
+                <td>Dual</td>
+            </tr>
+            <tr>
+                <td>Required space </td>
+                <td>Less</td>
+                <td>Comparatively more</td>
+            </tr>
+            <tr>
+                <td>Set of address/data bus</td>
+                <td>One</td>
+                <td>Two</td>
+            </tr>
+            <tr>
+                <td>Development cost</td>
+                <td>Low</td>
+                <td>Comparatively more</td>
+            </tr>
+            <tr>
+                <td>Efficiency</td>
+                <td>Less</td>
+                <td>More</td>
+            </tr>
+            <tr>
+                <td>Execution speed</td>
+                <td>Slow</td>
+                <td>Comparatively fast</td>
+            </tr>
+            <tr>
+                <td>Operation</td>
+                <td>Simple </td>
+                <td>Complex</td>
+            </tr>
+            <tr>
+                <td>Performance offered</td>
+                <td>Low</td>
+                <td>Comparatively high</td>
+            </tr>
+            <tr>
+                <td>Clock cycle </td>
+                <td>Single instruction is executed in minimum two clock cycles</td>
+                <td>Single instruction is executed in one clock cycle</td>
+            </tr>
+            <tr>
+                <td>Feature</td>
+                <td>Data transfer and instruction fetching do not occur simultaneously</td>
+                <td>Data transfer and instruction fetching take place at the same time</td>
+            </tr>
+            <tr>
+                <td>Space utilization</td>
+                <td>Good</td>
+                <td>Not so good</td>
+            </tr>
+            <tr>
+                <td>Application</td>
+                <td>PCs, workstations, notebooks etc</td>
+                <td>Microcontrollers, digital signal processing etc</td>
+            </tr>
+            <tr>
+                <td>Controlling</td>
+                <td>Simpler</td>
+                <td>Complex</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
