@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    
+</head>
+<body>
+   
+    <style>
+        .balance{
+            width: 550px;
+            height: 200px;
+            background-color: rgb(106, 58, 41);
+            color: white;
+            box-shadow: 5px 5px 10px gray;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 3.3rem;
+            color :white;
+            text-align: center;
+            padding: 10px;
+        }
+        .left-div{
+            width: 40%;
+            float: left; 
+            background-color: rgb(62, 62, 138);
+            box-shadow: 5px 5px 10px gray;
+            margin: 0 auto;
+            height: 300px;
+            margin-top: 100px;
+            margin-right: 40px;
+            margin-left: 100px;
+
+        }
+        .deposit{
+            width: 90%;
+            padding: 15px;
+            border: 1px solid green;
+            margin-left: 10px;
+            box-shadow: 5px 5px 10px gray;
+            border-radius: 10px;
+            text-align: center;
+            
+        }
+        .add{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #ffc400ec;
+            padding: 14px 45px;
+            outline: none;
+            color:white;
+            border-radius: 24px;
+            transition: 0.25px;
+            cursor: pointer;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .add :hover{
+            background: #ffc400ec;
+        } 
+        .addbtn{
+            text-align: center;
+        }
+    </style>
+    
+    <div class="main-page-balance" id="main-page">
+        <div class="balance">
+            <h1>Balance : $<span id="total_balance">1500</span></h1>
+        </div>
+        <div class="left-div">
+             <h1>Deposit : $<span id="total-deposit">00</span></h1>
+             <input class="deposit" id="deposit_input" type="text" placeholder="Deposit Amount">
+             <div class="addbtn">
+                <button id="add_DepositBTN" class="add">Add Money</button>
+             </div>
+        </div>
+        <div class="left-div">
+            <h1>Withdraw : $<span id="withdrawTotal">00</span> </h1>
+            <input class="deposit" id="withdrawInput" type="text" placeholder="Withdraw Amount">
+            <div class="addbtn">
+               <button class="add" id="withdrawBtn">Subtract Money</button>
+        </div>
+    </div>
+    <script src="account3.js"></script>
+    
+</body>
+</html>

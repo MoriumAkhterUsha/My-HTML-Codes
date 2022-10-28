@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Website</title>
+ </head>
+<body>
+    <style>
+
+        .login-area{
+            margin-top: 10%;
+            box-shadow: 5px 5px 10px gray;
+            padding: 5%;
+            border-radius: 5px;
+        }
+        
+        h2,h4,h5{
+            font-weight: bolder;
+        }
+        .status{
+            margin-top: 50px;
+            padding: 20px  20px;
+            color:white;
+            border-radius: 10px;
+
+        }
+        .deposit{
+            background-color: rgb(62, 62, 138);
+        }
+        .withdraw{
+            background-color: rgb(70, 135, 135);
+        }
+        .balance{
+            background-color: rgb(106, 58, 41);
+        }
+
+    </style>
+    <script>
+        const depositBtn = document.getElementById('depositBtn');
+        depositBtn.addEventListener('click',function(){
+            const depositAmount = document.getElementById('depositAmount').value;
+            const depositNumber = parseFloat(depositAmount);
+
+            const currentDeposit = document.getElementById('currentDeposit').innerText;
+            const currentNumber = parseFloat(currentDeposit);
+
+            const totalDeposit = depositNumber + currentNumber;
+
+            const currentBalance = document.getElementById('currentBalance').innerText;
+            const balanceNumber = parseFloat(currentBalance);
+            const totalBalance = depositNumber + balanceNumber;
+        
+            document.getElementById('currentBalance').innerText = totalBalance;
+            document.getElementById('currentDeposit').innerText = totalDeposit;
+            document.getElementById('depositAmount').value ="";
+        })
+    </script>
+    <section>
+        <div class="container login-main" id="login-area">
+
+        </div>
+    </section>
+    <section class="container" id="transition-area">
+    <div class="row">
+     <div class="col-md-4">
+        <div class="deposit status ">
+        <h4>Deposit</h4>
+        <h2>$<span id="currentDeposit">00</span></h2>
+        </div>
+     </div>
+     <div class="col-md-4 ">
+        <div class="withdraw status">
+        <h4>Withdraw</h4>
+        <h2>$00</h2>
+        </div>
+     </div>
+     <div class="col-md-4 ">
+        <div class="balance status">
+        <h4>Balance</h4>
+        <h2>$ <span id="currentBalance">1200</span></h2>
+        </div>
+     </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <div class="login-area">
+        <h5>Deposit</h5>
+        <input type="text" class="form-control" placeholder="$Deposit Amount">
+        <button type="button" class="btn btn-primary">Deposit</button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="login-area">
+        <h5>Withdraw</h5>
+        <input type="text" class="form-control" placeholder="$Withdraw Amount">
+        <button type="button" class="btn btn-primary">Withdraw</button>
+        </div>
+    </div>
+    </div>
+    </section>
+</body>
+</html>
